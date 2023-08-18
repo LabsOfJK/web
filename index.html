@@ -1,0 +1,542 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Welcom to JK Lab. IoT & Blockchain</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap-utilities.min.css" integrity="sha512-K4XWKeYNHW67orY92NwVkgHAShgq/TowE5Sx9O4imSO1YM3ll+6pLLwcSJvr3IwDIWCnSDhkuxxqJEbY8+iGzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<style type="text/css">
+body {
+	background-color: #f2f2f2;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #333;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+h3 {
+	color: #95a5a6;
+	font-weight: 400;
+}
+
+h4 {
+	color: #95a5a6;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+img.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centered {
+    text-align: center;
+}
+
+/* Links */
+a {
+    color: #3498db;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.navbar-default {
+	background-color: #fff;
+	border-color: #fff;
+}
+
+.navbar-default .navbar-brand {
+	color: #333;
+}
+
+.navbar-default .navbar-nav > li > a ,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:visited,
+.navbar-default .navbar-nav > li > a:active {
+	color: #333 !important;
+	background-color: #fff !important;
+	
+	-webkit-transition: color 0.3s ease-in, background 0.3s ease-in;
+    -moz-transition: color 0.3s ease-in, background 0.3s ease-in;
+    -ms-transition: color 0.3s ease-in, background 0.3s ease-in;
+    -o-transition: color 0.3s ease-in, background 0.3s ease-in;
+    transition: color 0.3s ease-in, background 0.3s ease-in;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li.active > a {
+	color: #fff !important;
+	background-color: #333 !important;
+}
+
+
+.mt {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.form-control {
+	height: 42px;
+	font-size: 18px;
+	width: 280px;
+}
+
+i {
+	margin: 8px;
+	color: #3498db; 
+}
+
+.parallax {
+	background-attachment: fixed;
+	background-position: center center;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#foot {
+	background-color: #fff;
+	padding-top: 30px;
+}
+
+.highlight {
+	color: #ff6400;
+}
+
+a.gotop {
+	position: absolute;
+	margin-left: -35px;
+	margin-top: -60px;
+}
+
+a.gotop i{
+	padding: 20px;
+	
+	color: #333;
+	background-color: #fff;
+
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+
+	-webkit-transition: color 0.3s ease-in, background 0.3s ease-in;
+    -moz-transition: color 0.3s ease-in, background 0.3s ease-in;
+    -ms-transition: color 0.3s ease-in, background 0.3s ease-in;
+    -o-transition: color 0.3s ease-in, background 0.3s ease-in;
+    transition: color 0.3s ease-in, background 0.3s ease-in;
+}
+
+a.gotop:hover i{
+	color: #fff;
+	background-color: #333;
+}
+
+.carousel .item {
+  opacity: 0;
+  -webkit-transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -ms-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+  left: 0 !important;
+}
+
+.carousel .active {
+  opacity: 1 !important;
+}
+
+.carousel .left {
+  opacity: 0 !important;
+  -webkit-transition: opacity 0.5s ease-in-out !important;
+  -moz-transition: opacity 0.5s ease-in-out !important;
+  -ms-transition: opacity 0.5s ease-in-out !important;
+  -o-transition: opacity 0.5s ease-in-out !important;
+  transition: opacity 0.5s ease-in-out !important;
+}
+
+.carousel .carousel-control {
+  opacity: 1 !important;
+}
+
+.ng-invalid.ng-dirty {
+	border-color: #A94442;
+}
+
+.ng-valid.ng-dirty {
+	border-color: #3C763D;
+}
+
+
+/* HeaderWrap */
+#headerwrap {
+	background-image: url("jk-slide.jpg");
+	background-color: #333;
+	margin-top: -20px;
+	padding-top: 200px;
+	padding-bottom: 20px;
+}
+
+#headerwrap h1 {
+	margin-top: 60px;
+	margin-bottom: 15px;
+	color: white;
+	font-size: 45px;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+
+#headerwrap h3 {
+	color: white;
+}
+
+#headerwrap a.explore i{
+	margin-top: 150px;
+	padding: 20px;
+	
+	color: #fff;
+	background-color: transparent;
+	border: 2px solid #fff;
+
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+
+	-webkit-transition: color 0.3s ease-in, background 0.3s ease-in;
+    -moz-transition: color 0.3s ease-in, background 0.3s ease-in;
+    -ms-transition: color 0.3s ease-in, background 0.3s ease-in;
+    -o-transition: color 0.3s ease-in, background 0.3s ease-in;
+    transition: color 0.3s ease-in, background 0.3s ease-in;
+}
+
+#headerwrap a.explore:hover i{
+	color: #333;
+	background-color: #fff;
+}
+
+.submarine-map {
+	background-image: url(../img/cable-map.jpg);
+	min-height: 300px;
+}
+
+.lines {
+	background-image: url(../img/lines.jpg);
+	background-color: #fff;
+	min-height: 300px;
+}
+
+#gmap {
+	background-color: #333;
+	min-height: 500px;
+}
+
+#reviews {
+	padding-bottom: 100px;
+}
+
+#reviews img{
+	width: 150px;
+	height: 150px;
+}
+
+#footerwrap {
+	background-image: url(../img/cat-waiting.jpg);
+    background-color: #333;
+    padding-top: 120px;
+    padding-bottom: 150px;
+}
+
+#footerwrap h1 {
+    margin-top: 60px;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 45px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+#footerwrap a.btn {
+	padding: 10px;
+	
+	color: #fff;
+	background-color: transparent;
+	border: 2px solid #fff;
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	-webkit-transition: color 0.3s ease-in, background 0.3s ease-in;
+    -moz-transition: color 0.3s ease-in, background 0.3s ease-in;
+    -ms-transition: color 0.3s ease-in, background 0.3s ease-in;
+    -o-transition: color 0.3s ease-in, background 0.3s ease-in;
+    transition: color 0.3s ease-in, background 0.3s ease-in;
+}
+
+#footerwrap a.btn:hover {
+	color: #333;
+	background-color: #fff;
+}
+
+img, svg {
+	 vertical-align: baseline;
+	    width: 20%;
+}
+
+@media (min-width: 992px)
+{
+.col-lg-6 {
+		        width: 100%;
+}
+}
+
+</style>
+</head>
+
+  	<body data-spy="scroll" data-target=".navbar">
+
+		<div class="navbar navbar-light">
+
+<div class="container py-3 d-inline-flex">
+
+	<a class="navbar-brand" href="#jk"><img src="//jk.hk/jk-logo-2020-w.svg">
+
+	<!--
+<div class="text-end">a
+	-->
+
+<div class="text-end">
+<b>JK <span class="highlight">Lab</span>s</b></a>
+</div>
+
+
+        		<div class="navbar-collapse collapse">
+          			<ul class="nav navbar-nav navbar-right">
+            			<li><a href="index.html">Home</a></li>
+						<li><a href="index.html#">JK</a></li>
+          			</ul>
+        		</div>
+      		</div>
+   	 	</div>
+
+
+<div id="headerwrap" class="parallax">
+<div class="container centered">
+<div class="row">
+<div class="col-lg-12">
+<h1>JK <span class="highlight">Lab</span>s is the future</h1>
+<h3>Be in the future</h3>
+</div>
+</div>
+<div class="row">
+</div>
+</div>
+</div>
+
+
+
+		<div id="jk" class="container">
+			<div class="row mt centered">
+				<div class="col-lg-6 col-lg-offset-3">
+<h2>JK Lab Explore: The Innovative Intersection of Blockchain, Ai and IoT</h2>
+</div>
+</div>
+
+<div class="row mt">
+<div class="col-lg-12 wow fadeIn" data-wow-delay="700ms" data-wow-duration="500ms">
+<p>
+In this fast-moving world of technology, new inventions and technologies are emerging every day to shape our future. At JK Labs, we recognize this trend and focus on the development of Internet of Things (IoT) and Blockchain technologies from our personal interests. In addition to our passion for IoT and Blockchain technologies, we at JK Labs are also deeply involved in the development of Artificial Intelligence (AI) solutions. We recognize the tremendous potential of AI to transform industries and drive innovation. By combining AI with the Internet of Things and blockchain, we aim to create powerful and intelligent systems that will revolutionize industries.
+
+</p>
+</div>
+</div>
+
+<div class="row mt centered">
+<div class="col-lg-6 col-lg-offset-3">
+<h2>IoT: Smarter Connectivity</h2>
+</div>
+</div>
+
+
+			<div class="row mt">
+				<div class="col-lg-12" class="wow fadeInUp" data-wow-delay="700ms">
+<p>
+The Internet of Things (IoT) has begun to change the way we live, with devices ranging from smart homes and medical devices to industrial machinery becoming smarter and more connected. At JK Lab, we are further exploring the potential of these connections, trying to find new usage scenarios and applications that will make the user experience more convenient and efficient.
+</p>
+</div>
+</div>
+
+
+<div class="row mt centered">
+<div class="col-lg-6 col-lg-offset-3">
+<h2>Blockchain: Data Transparency and Trust</h2>
+</div>
+</div>
+
+
+<div class="row mt">
+<div class="col-lg-12 wow fadeIn" data-wow-delay="700ms" data-wow-duration="500ms">
+Blockchain is a decentralized technology that allows data to be verified and recorded across a network. This technology is not just for finance and cryptocurrencies. At JK Lab, we are exploring how it can be combined with the Internet of Things to ensure the integrity and non-tampering of data to build trust in IoT devices and applications.
+</div>
+</div>
+
+
+
+<div class="row mt centered">
+<div class="col-lg-6 col-lg-offset-3">
+<h2>JK Lab's Vision</h2>
+</div>
+</div>
+
+<div class="row mt">
+<div class="col-lg-12 wow fadeIn" data-wow-delay="700ms" data-wow-duration="500ms">
+<p>
+
+JK Lab's vision is to be a leading force in technology innovation, capitalizing on cutting-edge advances in the Internet of Things (IoT), blockchain, and artificial intelligence (AI). We strive to develop transformative solutions that address real-world challenges and drive positive change across industries.
+
+<h3>Our vision encompasses the following key aspects:</h3>
+
+<h4>INNOVATION: </h4>
+We aim to foster a culture of innovation within the lab, encouraging team members to think outside the box and explore new ways of solving problems. By staying at the forefront of technological advances, we can continually push the boundaries of what is possible.
+
+
+<h4>COLLABORATION </h4>
+We believe in the power of collaboration and partnership. Our vision includes actively seeking collaborations with industry leaders, research organizations, and startups to foster an ecosystem of knowledge sharing and mutual growth. By working together, we can combine resources, expertise and perspectives to create more impactful solutions.
+
+<h4>IMPACT:</h4>
+At JK Lab, we are committed to creating solutions that have a positive impact on society and the environment. Our vision is to develop technologies that address pressing global challenges such as sustainability, healthcare, and urban planning. We strive to improve efficiency, optimize resource use, and enhance the overall quality of life.
+
+<h4>ETHICAL AND RESPONSIBLE TECHNOLOGY:</h4> 
+We recognize the importance of ethical and responsible technology development. Our vision includes incorporating ethical considerations into our research and development process. We aim to ensure the privacy, security and fairness of our solutions, consider potential societal impacts, and strive to minimize any negative consequences.
+
+<h4>EDUCATION AND KNOWLEDGE SHARING: </h4>
+
+JK Lab sees itself as a center for knowledge sharing and education. We strive to provide individuals and organizations with the necessary skills and understanding of emerging technologies by organizing workshops, lectures, and training programs. By fostering a culture of learning, we aim to accelerate the adoption and integration of IoT, Blockchain, and Artificial Intelligence across industries.
+</p>
+
+</div>
+</div>
+
+
+<div class="row mt centered">
+<div class="col-lg-6 col-lg-offset-3">
+<h2>Conclusion</h2>
+</div>
+</div>
+
+
+<div class="row mt">
+<div class="col-lg-12 wow fadeIn" data-wow-delay="700ms" data-wow-duration="500ms">
+<p>At JK Lab, we are not only pursuing new trends in technology, but more importantly, we are pursuing innovation and practicality. We believe that only through continuous experimentation and trial and error can we ensure that we always stay at the forefront of technology and build better solutions for the world of tomorrow.
+</p>
+
+<P>I am JackyKit, if you are interested, please contact me. <a href="https://twitter.com/kitjacky">Twitter</a> </P>
+
+<p>
+Find the <a href="https://github.com/kitjacky/">JK Github</a>
+</p>
+
+
+
+<p>
+Our Layer 1 blockchain and IBC in Cosmos <a href="https://interchaininfo.zone/indexes/memenetwork">https://interchaininfo.zone/indexes/memenetwork</a>
+</p>
+
+
+<img src="JKBOT.png" style="width:100%">
+
+
+</div>
+</div>
+
+
+
+
+<footer class="sticky-footer fixed-bottom">
+	<div class="container my-auto">
+		<div class="copyright text-center my-auto">
+			<span>
+&copy; 2023 <a href="https://labs.jk.hk">JK Labs</a>
+			</span>
+		</div>
+	</div>
+</footer>
+
+
+
+
+<script>
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js" integrity="sha512-3dZ9wIrMMij8rOH7X3kLfXAzwtcHpuYpEgQg1OA4QAob1e81H8ntUQmQm3pBudqIoySO5j0tHN4ENzA6+n2r4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+</html>
+
